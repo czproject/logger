@@ -1,6 +1,9 @@
 
 # CzProject\Logger
 
+<a href="https://www.patreon.com/bePatron?u=9680759"><img src="https://c5.patreon.com/external/logo/become_a_patron_button.png" alt="Become a Patron!" height="35"></a>
+<a href="https://www.paypal.me/janpecha/1eur"><img src="https://buymecoffee.intm.org/img/button-paypal-white.png" alt="Buy me a coffee" height="35"></a>
+
 
 ## Installation
 
@@ -31,6 +34,7 @@ $logger->log('App crashed.', ILogger::CRITICAL);
 
 ### Loggers
 
+* `CzProject\Logger\CliLogger($level, $colored = NULL)` - sends messages to CLI STDOUT
 * `CzProject\Logger\OutputLogger($level)` - prints messages to STDOUT
 * `CzProject\Logger\FileLogger($path, $level)` - saves messages into new created file
 * `CzProject\Logger\MultiLogger()` - sends messages to other loggers
