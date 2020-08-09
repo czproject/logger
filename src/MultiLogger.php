@@ -6,7 +6,7 @@
 	class MultiLogger implements ILogger
 	{
 		/** @var ILogger[] */
-		private $loggers = array();
+		private $loggers = [];
 
 
 		public function addLogger(ILogger $logger)

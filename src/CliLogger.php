@@ -12,14 +12,14 @@
 		private $colored;
 
 		/** @var array */
-		protected static $colors = array(
+		protected static $colors = [
 			ILogger::SUCCESS => '0;32',
 			ILogger::ERROR => '0;31',
 			ILogger::EXCEPTION => '0;31',
 			ILogger::CRITICAL => '0;31',
 			ILogger::WARNING => '0;33',
 			ILogger::DEBUG => '1;30',
-		);
+		];
 
 
 		/**

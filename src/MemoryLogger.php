@@ -9,7 +9,7 @@
 		private $level;
 
 		/** @var string[] */
-		private $log = array();
+		private $log = [];
 
 
 		/**
