@@ -46,7 +46,7 @@
 
 
 		/**
-		 * @return	bool
+		 * @return bool
 		 */
 		public static function detectColoredOutput()
 		{
