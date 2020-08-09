@@ -5,16 +5,33 @@
 
 	class MemoryLogger implements ILogger
 	{
+		/** @var int */
+		private $level;
+
 		/** @var string[] */
 		private $log = array();
 
 
-		public function log($msg, $level = self::INFO)
+		/**
+		 * @param  int
+		 */
+		public function __construct($level = ILogger::INFO)
 		{
-			$this->log[] = $msg;
+			$this->level = $level;
 		}
 
 
+		public function log($msg, $level = self::INFO)
+		{
+			if ($level >= $this->level) {
+				$this->log[] = $msg;
+			}
+		}
+
+
+		/**
+		 * @return string[]
+		 */
 		public function getLog()
 		{
 			return $this->log;

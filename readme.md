@@ -37,7 +37,7 @@ $logger->log('App crashed.', ILogger::CRITICAL);
 * `CzProject\Logger\CliLogger($level, $colored = NULL)` - sends messages to CLI STDOUT
 * `CzProject\Logger\OutputLogger($level)` - prints messages to STDOUT
 * `CzProject\Logger\FileLogger($path, $level)` - saves messages into new created file
-* `CzProject\Logger\MemoryLogger()` - saves messages into memory, you can use `$memoryLogger->getLog()`
+* `CzProject\Logger\MemoryLogger($level)` - saves messages into memory, you can use `$memoryLogger->getLog()`
 * `CzProject\Logger\MultiLogger()` - sends messages to other loggers
 
 ``` php
