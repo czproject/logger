@@ -48,6 +48,21 @@ $logger->addLogger(new Logger\FileLogger(__DIR__ . '/debug.log', ILogger::DEBUG)
 $logger->log($msg, $level);
 ```
 
+### LoggerProxy
+
+LoggerProxy is interface for using of Logger.
+
+```
+$logger = new Logger\OutputLogger(ILogger::DEBUG); // minimal level
+$proxy = new Logger\LoggerProxy($logger);
+$proxy->debug('Debug info');
+$proxy->log('Output'); // or $proxy->info()
+$proxy->success('Done!');
+$proxy->warning('Warning...', ILogger::WARNING);
+$proxy->error('Error message', ILogger::ERROR);
+$proxy->exception('Exception message', ILogger::EXCEPTION);
+$proxy->critical('App crashed.', ILogger::CRITICAL);
+```
 
 ------------------------------
 
