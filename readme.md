@@ -52,7 +52,7 @@ $logger->log($msg, $level);
 
 LoggerProxy is interface for using of Logger.
 
-```
+```php
 $logger = new Logger\OutputLogger(ILogger::DEBUG); // minimal level
 $proxy = new Logger\LoggerProxy($logger);
 $proxy->debug('Debug info');
