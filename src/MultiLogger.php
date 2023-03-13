@@ -9,6 +9,9 @@
 		private $loggers = [];
 
 
+		/**
+		 * @return self
+		 */
 		public function addLogger(ILogger $logger)
 		{
 			$this->loggers[] = $logger;

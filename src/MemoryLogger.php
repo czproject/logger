@@ -13,7 +13,7 @@
 
 
 		/**
-		 * @param  int
+		 * @param  int $level
 		 */
 		public function __construct($level = ILogger::INFO)
 		{

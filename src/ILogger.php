@@ -14,5 +14,10 @@
 		const CRITICAL = 60;
 
 
+		/**
+		 * @param  string $msg
+		 * @param  int $level
+		 * @return void
+		 */
 		function log($msg, $level = self::INFO);
 	}

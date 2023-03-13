@@ -11,7 +11,7 @@
 		/** @var bool */
 		private $colored;
 
-		/** @var array */
+		/** @var array<int, string> */
 		protected static $colors = [
 			ILogger::SUCCESS => '0;32',
 			ILogger::ERROR => '0;31',
@@ -23,7 +23,8 @@
 
 
 		/**
-		 * @param  int
+		 * @param  int $level
+		 * @param  bool|NULL $colored
 		 */
 		public function __construct($level = ILogger::INFO, $colored = NULL)
 		{

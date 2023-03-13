@@ -16,7 +16,7 @@
 
 
 		/**
-		 * @param  string
+		 * @param  string $s
 		 * @return void
 		 */
 		public function debug($s)
@@ -26,7 +26,7 @@
 
 
 		/**
-		 * @param  string
+		 * @param  string $s
 		 * @return void
 		 */
 		public function log($s)
@@ -36,7 +36,7 @@
 
 
 		/**
-		 * @param  string
+		 * @param  string $s
 		 * @return void
 		 */
 		public function info($s)
@@ -46,7 +46,7 @@
 
 
 		/**
-		 * @param  string
+		 * @param  string $s
 		 * @return void
 		 */
 		public function success($s)
@@ -56,7 +56,7 @@
 
 
 		/**
-		 * @param  string
+		 * @param  string $s
 		 * @return void
 		 */
 		public function warning($s)
@@ -66,7 +66,7 @@
 
 
 		/**
-		 * @param  string
+		 * @param  string $s
 		 * @return void
 		 */
 		public function error($s)
@@ -76,7 +76,7 @@
 
 
 		/**
-		 * @param  string
+		 * @param  string $s
 		 * @return void
 		 */
 		public function exception($s)
@@ -86,7 +86,7 @@
 
 
 		/**
-		 * @param  string
+		 * @param  string $s
 		 * @return void
 		 */
 		public function critical($s)

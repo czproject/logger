@@ -13,12 +13,18 @@
 
 
 		/**
-		 * @param  string
-		 * @param  int
+		 * @param  string $file
+		 * @param  int $level
 		 */
 		public function __construct($file, $level = ILogger::INFO)
 		{
-			$this->file = fopen($file, 'w');
+			$fp = fopen($file, 'w');
+
+			if ($fp === FALSE) {
+				throw new \RuntimeException("fopen() failed.");
+			}
+
+			$this->file = $fp;
 			$this->level = $level;
 		}
 
