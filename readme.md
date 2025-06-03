@@ -16,7 +16,7 @@
 composer require czproject/logger
 ```
 
-CzProject\Logger requires PHP 5.6 or later.
+CzProject\Logger requires PHP 8.0 or later.
 
 
 ## Usage
